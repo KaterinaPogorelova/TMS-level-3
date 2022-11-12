@@ -98,12 +98,13 @@ p {
     background-color: #fad4d4;
 }
 
-/* конец глобальных стилей */
-
-/*tabs*/
 section {
     padding-top: 100px;
 }
+
+/* конец глобальных стилей */
+
+/*tabs*/
 
 .tabs__tabs-header {
     display: inline-flex;
