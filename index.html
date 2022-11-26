@@ -6,37 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>tabs</title>
+    <title>TMS-level-3</title>
 </head>
 
 <body>
     <section class="tabs">
         <div class="container">
-            <div class="tabs__tabs-header">
-                <div class="tabs-header__tab tabs-header__tab--active">
-                    <p class="tab__title">TAB 1</p>
-                </div>
-                <div class="tabs-header__tab">
-                    <p class="tab__title">TAB 2</p>
-                </div>
-                <div class="tabs-header__tab">
-                    <p class="tab__title">TAB 3</p>
-                </div>
-            </div>
+            <ul class="tabs__tabs-header">
+                <li class="tabs-header__tab tabs-header__tab--active">TAB 1</li>
+                <li class="tabs-header__tab">TAB 2</li>
+                <li class="tabs-header__tab">TAB 3</li>
+            </ul>
             <div class="tabs__tabs-content">
                 <div class="tabs-content__text">
                     <h3 class="text__title">Tabs with soft transitioning effect.</h3>
-                    <p class="text__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    <p class="text__desc main-text main-text--left-align main-text--black-color">Lorem ipsum dolor sit
+                        amet, consectetur
+                        adipiscing elit. Aenean
+                        euismod
                         bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
                         justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                         penatibus et magnis dis parturient montes.</p>
-                    <p class="text__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    <p class="text__desc main-text main-text--left-align main-text--black-color">Lorem ipsum dolor sit
+                        amet, consectetur
+                        adipiscing elit. Aenean
+                        euismod
                         bibendum laoreet.</p>
 
                     <button class="button button--red-color">Download</button>
                 </div>
                 <div class="tabs__image--wrapper">
-                    <img src="img/tabs/statue.png" alt="statue">
+                    <img src="img/tabs/statue.png" alt="statue" class="tabs__image">
                 </div>
             </div>
         </div>
@@ -45,36 +45,78 @@
         <div class="container">
             <h2 class="main-title about__title">WHY THIS IS AWESOME</h2>
             <div class="separator separator--red-color"></div>
-            <p class="secondary-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <ul class="about__list">
-                <li class="list__list-item">
+            <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="about__list">
+                <div class="list__list-item">
                     <div class="list-item__image--wrapper">
                         <img class="list-item__image" src="./img/about/lamp.svg" alt="lamp">
                     </div>
-                    <h3 class="list-item__title">Thoughtful Design</h3>
-                    <p class="list-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <h4 class="list-item__title">Thoughtful Design</h4>
+                    <p class="main-text main-text--black-color">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
-                </li>
-                <li class="list__list-item">
+                </div>
+                <div class="list__list-item">
                     <div class="list-item__image--wrapper">
                         <img class="list-item__image" src="./img/about/keyboard.svg" alt="keyboard">
                     </div>
-                    <h3 class="list-item__title">Thoughtful Design</h3>
-                    <p class="list-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <h4 class="list-item__title">Thoughtful Design</h4>
+                    <p class="main-text main-text--black-color">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
-                </li>
-                <li class="list__list-item">
+                </div>
+                <div class="list__list-item">
                     <div class="list-item__image--wrapper">
                         <img class="list-item__image" src="./img/about/light.svg" alt="light">
                     </div>
-                    <h3 class="list-item__title">Thoughtful Design</h3>
-                    <p class="list-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <h4 class="list-item__title">Thoughtful Design</h4>
+                    <p class="main-text main-text--black-color">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.
                     </p>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing">
+        <div class="container">
+            <h2 class="main-title">PRICING OPTIONS</h2>
+            <div class="separator separator--red-color"></div>
+            <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="pricing__list">
+                <ul class="list__option">
+                    <h4 class="option__header option__title">Basic</h4>
+                    <h3 class="option__header option__price">$10</h3>
+                    <h5 class="option__header main-text option__text">Free for life</h5>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                </ul>
+                <ul class="list__option">
+                    <h4 class="option__header option__title">Optima</h4>
+                    <h3 class="option__header option__price">$20</h3>
+                    <h5 class="option__header main-text option__text">Free for life</h5>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                </ul>
+                <ul class="list__option">
+                    <h4 class="option__header option__title">Pro</h4>
+                    <h3 class="option__header option__price">$30</h3>
+                    <h5 class="option__header main-text option__text">Free for life</h5>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                    <li class="main-text option__text option__text--white-bg">1 gb of space</li>
+                </ul>
+            </div>
         </div>
     </section>
 </body>
