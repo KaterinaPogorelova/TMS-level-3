@@ -176,19 +176,20 @@ section {
     margin-top: 30px;
 }
 
-/*конец tabs*/
+/*end tabs*/
 /* about */
 .about__list {
-    margin: 110px -10px 0;
+    margin-top: 110px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .list__list-item {
     text-align: center;
     width: 370px;
-    margin: 0 10px 60px;
+    margin-bottom: 60px;
 }
 
 .list-item__image--wrapper {
@@ -211,6 +212,7 @@ section {
 }
 
 /* end about */
+/*pricing*/
 .pricing {
     background-color: #F5F5F5;
     padding-bottom: 50px;
@@ -221,12 +223,12 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 0 -10px;
+    gap: 10px;
 }
 
 .list__option {
     width: 370px;
-    margin: 80px 10px 0;
+    margin-top: 80px;
 }
 
 .list__option:hover {
@@ -235,9 +237,15 @@ section {
     box-shadow: 0 0 10px rgba(102, 102, 102, 0.5)
 }
 
+.option__header-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #FFFFFF;
+}
+
 .option__header {
     background-color: #333333;
-    border: 1px solid #F5F5F5;
     color: white;
 }
 
@@ -262,8 +270,14 @@ section {
     padding: 15px 0px;
 }
 
+.option__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
 .option__text--white-bg {
-    background-color: white;
+    background-color: #FFFFFF;
     color: #86878B;
 }
 
