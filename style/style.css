@@ -52,6 +52,7 @@ p {
     width: 170px;
     height: 1px;
     margin: 60px auto 40px;
+    background-color: white;
 }
 
 .separator--red-color {
@@ -66,6 +67,10 @@ p {
     color: #000000;
 }
 
+.main-title--color-white {
+    color: white;
+}
+
 .main-text {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -76,6 +81,10 @@ p {
 
 .main-text--black-color {
     color: black;
+}
+
+.main-text--white-color {
+    color: white;
 }
 
 .main-text--left-align {
@@ -91,10 +100,19 @@ p {
     text-align: center;
     padding: 15px;
     border: 2px solid white;
+    background: none;
+}
+
+.button--large {
+    width: 370px;
+    display: block;
+    margin: 0px auto;
 }
 
 .button:hover {
     cursor: pointer;
+    border-color: #EC7979;
+    color: #EC7979;
 }
 
 .button--red-color {
@@ -104,6 +122,21 @@ p {
 
 .button--red-color:hover {
     background-color: #AB4949;
+    color: white;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    height: 45px;
+    width: 350px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.input--huge {
+    height: 235px;
 }
 
 section {
@@ -111,7 +144,167 @@ section {
 }
 
 /* end of global styles */
+/*header+banner*/
+.header {
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px 0px 115px;
+}
 
+.header__logo-wrapper {
+    padding: 25px 0px 20px 0px;
+}
+
+.header__nav {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav__item {
+    color: white;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+    background: #EC7979;
+}
+
+.banner {
+    padding-top: 230px;
+    padding-bottom: 185px;
+    background: url("..//img/header_banner/bg.png") center / cover no-repeat;
+}
+
+.banner__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__logo-wrapper {
+    margin-bottom: 75px;
+}
+
+.logo-wrapper__logo--large {
+    height: 55px;
+}
+
+.banner__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+    width: 670px;
+    margin-bottom: 55px;
+}
+
+.banner__separator {
+    margin: 0px;
+}
+
+.banner__text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    width: 270px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.content__right-side {
+    width: 470px;
+}
+
+.right-side__inputs {
+    padding: 30px 50px 75px 50px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.right-side__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 65px;
+}
+
+.right-side__title--red-color {
+    color: #EC7979;
+}
+
+.right-side__input {
+    margin-bottom: 20px;
+}
+
+.right-side__input:last-of-type {
+    margin-bottom: 0px;
+}
+
+.input-button {
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    padding: 25px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* end of header+banner*/
+/*social media*/
+.social {
+    background-color: #F8EFEF;
+    padding: 20px 0px;
+}
+
+.social__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__desc {
+    width: 40%;
+}
+
+.social__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.social__text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #86878B;
+}
+
+.social__icons {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons__icon-wrapper:hover {
+    cursor: pointer;
+}
+
+/*end of social media */
 /*tabs*/
 
 .tabs__tabs-header {
@@ -183,7 +376,7 @@ section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 .list__list-item {
@@ -223,7 +416,7 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 10px;
+    gap: 20px;
 }
 
 .list__option {
@@ -282,3 +475,104 @@ section {
 }
 
 /*end of pricing*/
+/*reviews*/
+.reviews {
+    padding-bottom: 65px;
+}
+
+.customers-reviews {
+    display: flex;
+    margin-top: 85px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.customers-reviews__review-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-reviews__review {
+    width: 370px;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    padding: 40px 25px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #E2E2E2;
+    margin-left: 70px;
+}
+
+.customer {
+    margin-top: 45px;
+    display: flex;
+    width: 370px;
+    gap: 30px;
+}
+
+.customer__userpic-wrapper {
+    width: 70px;
+}
+
+.customer__userpic {
+    display: block;
+}
+
+.info__customer-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/*end of reviews*/
+/*second banner*/
+.second-banner {
+    background: url("..//img/second_banner/bg2.png") center / cover no-repeat;
+    padding-bottom: 50px;
+}
+
+.second-banner__button {
+    margin-top: 75px;
+}
+
+
+
+/*end of second banner*/
+/*contact*/
+.contact {
+    padding-bottom: 50px;
+}
+
+.contact__inputs {
+    display: flex;
+    margin: 90px 0px 50px;
+}
+
+.contact__input {
+    width: 570px;
+    margin-bottom: 50px;
+}
+
+/*end of contact*/
+/*footer*/
+.footer {
+    background: #000000;
+    padding: 40px 0px 30px;
+}
+
+.footer__logos {
+    width: 40%;
+    margin: 0px auto 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*end of footer*/
