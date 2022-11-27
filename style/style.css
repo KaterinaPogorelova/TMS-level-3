@@ -161,21 +161,21 @@ section {
     width: 660px;
     display: flex;
     justify-content: space-between;
+
+}
+
+.nav__item {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 600;
 }
 
-.nav__item {
-    color: white;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .nav__item:hover {
-    cursor: pointer;
     background: #EC7979;
 }
 
@@ -287,10 +287,6 @@ section {
     width: 55%;
     justify-content: space-between;
     align-items: center;
-}
-
-.icons__icon-wrapper:hover {
-    cursor: pointer;
 }
 
 /*end of social media */
