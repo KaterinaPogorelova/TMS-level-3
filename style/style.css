@@ -467,16 +467,16 @@ section {
 
 .customers-reviews {
     display: flex;
-    margin-top: 85px;
+    margin: 85px -15px 0px;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .customers-reviews__review-wrapper {
     display: flex;
     flex-direction: column;
+    margin: 0 15px;
 }
 
 .customer-reviews__review {
@@ -484,37 +484,61 @@ section {
     background-color: #E2E2E2;
     border-radius: 10px;
     padding: 40px 25px;
+    position: relative;
 }
 
-.triangle {
+.customer-reviews__review::after {
+    content: "";
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 30px solid #E2E2E2;
-    margin-left: 70px;
+    position: absolute;
+    top: 180px;
+    left: 60px;
 }
 
 .customer {
     margin-top: 45px;
     display: flex;
     width: 370px;
-    gap: 30px;
 }
 
 .customer__userpic-wrapper {
     width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
 }
 
-.customer__userpic {
-    display: block;
+.customer__userpic-1 {
+    position: absolute;
+    left: -10px;
+    top: -5px;
+}
+
+.customer__userpic-2 {
+    position: absolute;
+    left: -15px;
+}
+
+.customer__userpic-3 {
+    position: absolute;
+    right: -20px;
+    bottom: -15px;
+}
+
+.customer__info {
+    margin-left: 30px;
 }
 
 .info__customer-name {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 /*end of reviews*/
