@@ -125,15 +125,19 @@ a {
 .input {
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    height: 45px;
-    width: 350px;
+    padding-bottom: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
 
-.input--huge {
-    height: 235px;
+
+.input::placeholder {
+    color: #BDBDBD
+}
+
+.input:focus {
+    outline: none;
 }
 
 section {
@@ -257,8 +261,8 @@ a:not(.header__logo-wrapper) svg:hover {
     width: 470px;
 }
 
-.right-side__inputs {
-    padding: 30px 50px 75px 50px;
+.right-side__form {
+    padding: 30px 50px 75px;
     background-color: white;
     border-radius: 10px 10px 0px 0px;
 }
@@ -269,25 +273,29 @@ a:not(.header__logo-wrapper) svg:hover {
     font-size: 24px;
     text-align: center;
     color: #333333;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
 }
 
 .right-side__title--red-color {
     color: #EC7979;
 }
 
-.right-side__input {
-    margin-bottom: 20px;
+.banner-input {
+    width: 370px;
 }
 
-.right-side__input:last-of-type {
+.form-group {
+    margin-bottom: 33px;
+}
+
+.form-group:last-of-type {
     margin-bottom: 0px;
 }
 
 .input-button {
     width: 100%;
     font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     color: white;
     padding: 25px;
@@ -603,12 +611,41 @@ a:not(.header__logo-wrapper) svg:hover {
 
 .contact__inputs {
     display: flex;
-    margin: 90px 0px 50px;
+    flex-wrap: wrap;
+    margin: 90px -15px 50px;
+}
+
+.contact__main-inputs,
+.contact__textarea-wrapper {
+    margin: 0 15px;
+}
+
+.main-inputs__form-group {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.main-inputs__form-group:last-of-type {
+    margin-bottom: 0px;
+}
+
+.contact__label {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
 }
 
 .contact__input {
     width: 570px;
-    margin-bottom: 50px;
+    background: transparent;
+    padding-bottom: 0;
+}
+
+.textarea {
+    resize: none;
+    height: calc(100% - 20px);
 }
 
 /*end of contact*/

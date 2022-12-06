@@ -58,17 +58,24 @@
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button">Download</a>
                 </div>
                 <div class="content__right-side">
-                    <div class="right-side__inputs">
+                    <div class="right-side__form">
                         <h4 class="right-side__title">TRY YOUR <span class="right-side__title--red-color">FREE</span>
                             TRIAL
                             TODAY</h4>
-                        <input type="text" placeholder="Name" class="input right-side__input">
-                        <input type="email" placeholder="Email" class="input right-side__input">
-                        <input type="password" placeholder="Password" class="input right-side__input">
+                        <form action="#" method="post" name="registration" id="registration">
+                            <div class="form-group"><input type="text" name="user-name" placeholder="Name" required
+                                    class="input banner-input"></div>
+                            <div class="form-group"><input type="email" name="user-email" placeholder="Email" required
+                                    class="input banner-input"></div>
+                            <div class="form-group"><input type="password" name="user-password" placeholder="Password"
+                                    required class="input banner-input"></div>
+                        </form>
                     </div>
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button input-button button--red-color">
-                        Get started
-                    </a>
+                    <div class="form-button"><button type="submit" form="registration"
+                            class="button input-button button--red-color">
+                            Get started
+                        </button></div>
+
                 </div>
 
             </div>
@@ -78,7 +85,8 @@
         <div class="container social__container">
             <div class="social__desc">
                 <h4 class="social__title">Social Media</h4>
-                <p class="main-text main-text--left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p class="main-text main-text--left-align">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
                     Aenean euismod bibendum laoreet.</p>
             </div>
             <ul class="social__icons">
@@ -333,17 +341,31 @@
         <div class="container">
             <h2 class="main-title">CONTACT US</h2>
             <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="contact__inputs">
-                <div class="contact__main-inputs"><input type="text" placeholder="Name" class="input contact__input">
-                    <input type="email" placeholder="Email" class="input contact__input">
-                    <input type="password" placeholder="Password" class="input contact__input">
+            <form action="#" name="contact-message" method="post" id="contact-message" class="contact__inputs">
+                <div class="contact__main-inputs">
+                    <div class="main-inputs__form-group">
+                        <label for="Name" class="contact__label">Name</label>
+                        <input type="text" required class="input contact__input" id="Name">
+                    </div>
+                    <div class="main-inputs__form-group">
+                        <label for="Email" class="contact__label">Email</label>
+                        <input type="email" required class="input contact__input" id="Email">
+                    </div>
+                    <div class="main-inputs__form-group">
+                        <label for="Password" class="contact__label">Password</label>
+                        <input type="password" required class="input contact__input" id="Password">
+                    </div>
                 </div>
-                <div class="contact__message-input-wrapper">
-                    <input type="text" placeholder="Message" class="input contact__input input--huge">
+                <div class="contact__textarea-wrapper">
+                    <label for="Message" class="contact__label">Message</label>
+                    <textarea class="input contact__input textarea" id="Message"></textarea>
                 </div>
-            </div>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="button button--large button--red-color">Send
-                Message</a>
+            </form>
+            <div class="form-button"><button type="submit" form="contact-message"
+                    class="button button--large button--red-color">Send
+                    Message</button></div>
+
+
         </div>
         </div>
     </section>
