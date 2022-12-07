@@ -138,6 +138,11 @@ a {
 
 .input:focus {
     outline: none;
+    border-color: #EC7979;
+}
+
+.input:focus::placeholder {
+    color: #EC7979;
 }
 
 section {
@@ -635,17 +640,23 @@ a:not(.header__logo-wrapper) svg:hover {
     font-weight: 400;
     font-size: 14px;
     color: #BDBDBD;
+    position: absolute;
 }
 
 .contact__input {
     width: 570px;
     background: transparent;
-    padding-bottom: 0;
+}
+
+.contact__label:has(+ .contact__input:focus) {
+    transform: translateY(-20px);
+    color: #EC7979;
 }
 
 .textarea {
     resize: none;
-    height: calc(100% - 20px);
+    height: 100%;
+    padding-bottom: 0;
 }
 
 /*end of contact*/
